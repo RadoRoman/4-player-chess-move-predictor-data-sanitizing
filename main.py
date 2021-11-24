@@ -28,9 +28,10 @@ class GameNotation:
             print(r)
             print(15*"|")
             print(temp)
-
-with open(r'your path goes here', 'r') as f: 
-    x = f.readline()
-    # end = re.split(r'\[[^\]]*\]\[Variant "FFA"]\[RuleVariants "PromoteTo=D"]',x)
-    GameNotation(x)
+            
+def readLines():    #this code it's for pytest
+    with open(r'your path goes here', 'r') as f:
+        x = f.readline()
+        # end = re.split(r'\[[^\]]*\]\[Variant "FFA"]\[RuleVariants "PromoteTo=D"]',x)
+        GameNotation(x)
 
