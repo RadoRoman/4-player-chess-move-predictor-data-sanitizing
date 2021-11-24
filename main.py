@@ -29,7 +29,7 @@ class GameNotation:
             print(15*"|")
             print(temp)
 
-with open('/home/rad0r/Desktop/2ndYearInformatics/solo.txt', 'r') as f:
+with open(r'your path goes here', 'r') as f: 
     x = f.readline()
     # end = re.split(r'\[[^\]]*\]\[Variant "FFA"]\[RuleVariants "PromoteTo=D"]',x)
     GameNotation(x)
