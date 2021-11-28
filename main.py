@@ -30,7 +30,7 @@ class GameNotation:
             print(temp)
             
 def readLines():    #this code it's for pytest
-    with open(r'your path goes here', 'r') as f:
+    with open(r'C:\Users\radoe\Desktop\Work\data\solo.txt', 'r') as f:
         x = f.readline()
         # end = re.split(r'\[[^\]]*\]\[Variant "FFA"]\[RuleVariants "PromoteTo=D"]',x)
         GameNotation(x)
