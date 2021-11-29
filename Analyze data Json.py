@@ -2,7 +2,7 @@ import re
 import json
 
 #Read the text file
-f = open("solo_DATA.txt","r")
+f = open("../data/solo.txt","r")
 string = f.read()
 
 #1) split file into unnecessary & necessary parts

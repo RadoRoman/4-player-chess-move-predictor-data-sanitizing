@@ -1,0 +1,965 @@
+{
+    "GameNr": "626072",
+    "Variant": "FFA",
+    "RuleVariants": "PromoteTo=D",
+    "Result": "uuyytee: 5 - george56789: 83 - papabellotas2: 6 - kuprabhu: 62",
+    "Termination": "Game over. (Blue +20)",
+    "Red": "uuyytee",
+    "RedElo": "1892",
+    "Blue": "george56789",
+    "BlueElo": "1928",
+    "Yellow": "papabellotas2",
+    "YellowElo": "1886",
+    "Green": "kuprabhu",
+    "GreenElo": "1881",
+    "TimeControl": "1+15D",
+    "Site": "www.chess.com/4-player-chess",
+    "Date": "Mon Dec 17 2018 18:40:52 GMT+0000 (UTC)",
+    "Chess_Rounds": [
+        {
+            "round_nr": 1,
+            "moves": [
+                "d2-d4",
+                "b7-d7",
+                "j13-j12",
+                "m8-k8"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:20:15.602Z clock=60000",
+                "date=2018-12-17T18:20:18.568Z clock=60000",
+                "date=2018-12-17T18:20:22.737Z clock=60000",
+                "date=2018-12-17T18:20:27.752Z clock=60000"
+            ]
+        },
+        {
+            "round_nr": 2,
+            "moves": [
+                "Ne1-f3",
+                "d7-e7",
+                "Bi14-j13",
+                "k8-j8"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:20:32.810Z clock=60000",
+                "date=2018-12-17T18:20:35.326Z clock=60000",
+                "date=2018-12-17T18:20:36.718Z clock=60000",
+                "date=2018-12-17T18:20:39.332Z clock=60000"
+            ]
+        },
+        {
+            "round_nr": 3,
+            "moves": [
+                "e2-e3",
+                "b6-c6",
+                "g13-g11",
+                "j8-i8"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:20:41.072Z clock=60000",
+                "date=2018-12-17T18:20:43.289Z clock=60000",
+                "date=2018-12-17T18:20:46.540Z clock=60000",
+                "date=2018-12-17T18:20:48.737Z clock=60000"
+            ]
+        },
+        {
+            "round_nr": 4,
+            "moves": [
+                "Nj1-i3",
+                "e7-f7",
+                "Nj14-i12",
+                "i8-h8"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:20:51.953Z clock=60000",
+                "date=2018-12-17T18:20:53.255Z clock=60000",
+                "date=2018-12-17T18:20:54.603Z clock=60000",
+                "date=2018-12-17T18:20:55.736Z clock=60000"
+            ]
+        },
+        {
+            "round_nr": 5,
+            "moves": [
+                "Ni3-h5",
+                "Na10-c9",
+                "d13-d12",
+                "m5-l5"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:21:02.073Z clock=60000",
+                "date=2018-12-17T18:21:06.560Z clock=60000",
+                "date=2018-12-17T18:21:12.666Z clock=60000",
+                "date=2018-12-17T18:21:22.582Z clock=60000"
+            ]
+        },
+        {
+            "round_nr": 6,
+            "moves": [
+                "k2-k3",
+                "b10-c10",
+                "Ne14-f12",
+                "Bn6-m5"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:21:26.792Z clock=60000",
+                "date=2018-12-17T18:21:29.475Z clock=60000",
+                "date=2018-12-17T18:21:31.852Z clock=60000",
+                "date=2018-12-17T18:21:34.857Z clock=60000"
+            ]
+        },
+        {
+            "round_nr": 7,
+            "moves": [
+                "Bf1-e2",
+                "Ba9-b10",
+                "Bf14-h12",
+                "Nn5-l6"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:21:40.046Z clock=60000",
+                "date=2018-12-17T18:21:43.477Z clock=60000",
+                "date=2018-12-17T18:21:47.167Z clock=60000",
+                "date=2018-12-17T18:21:48.857Z clock=60000"
+            ]
+        },
+        {
+            "round_nr": 8,
+            "moves": [
+                "h2-h3",
+                "O-O",
+                "Qh14-g13",
+                "Nn10-l9"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:21:58.022Z clock=60000",
+                "date=2018-12-17T18:22:00.714Z clock=60000",
+                "date=2018-12-17T18:22:02.486Z clock=60000",
+                "date=2018-12-17T18:22:10.062Z clock=60000"
+            ]
+        },
+        {
+            "round_nr": 9,
+            "moves": [
+                "Qg1-h2",
+                "Ra9-a8",
+                "O-O-O",
+                "O-O"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:22:20.874Z clock=60000",
+                "date=2018-12-17T18:22:23.517Z clock=60000",
+                "date=2018-12-17T18:22:26.425Z clock=60000",
+                "date=2018-12-17T18:22:28.882Z clock=60000"
+            ]
+        },
+        {
+            "round_nr": 0,
+            "moves": [
+                "O-O-O",
+                "b8-c8",
+                "Ki14-j14",
+                "Qn8-k8"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:22:35.075Z clock=60000",
+                "date=2018-12-17T18:22:36.969Z clock=60000",
+                "date=2018-12-17T18:22:40.204Z clock=60000",
+                "date=2018-12-17T18:22:44.676Z clock=60000"
+            ]
+        },
+        {
+            "round_nr": 1,
+            "moves": [
+                "Nf3-d2",
+                "b5-c5",
+                "Ni12-j10",
+                "Nl9xNj10"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:22:50.389Z clock=60000",
+                "date=2018-12-17T18:22:58.275Z clock=60000",
+                "date=2018-12-17T18:22:59.841Z clock=60000",
+                "date=2018-12-17T18:23:03.972Z clock=60000"
+            ]
+        },
+        {
+            "round_nr": 2,
+            "moves": [
+                "Be2xBa6",
+                "Bh12xNj10",
+                "Qk8xNh5"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:23:20.765Z clock=58207",
+                "date=2018-12-17T18:23:24.120Z clock=60000",
+                "date=2018-12-17T18:23:25.128Z clock=60000",
+                "date=2018-12-17T18:23:30.787Z clock=60000"
+            ]
+        },
+        {
+            "round_nr": 3,
+            "moves": [
+                "Nd2-c4",
+                "Bj10xm7"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:23:52.764Z clock=51230",
+                "date=2018-12-17T18:23:55.497Z clock=60000",
+                "date=2018-12-17T18:23:57.323Z clock=60000",
+                "date=2018-12-17T18:23:59.802Z clock=60000"
+            ]
+        },
+        {
+            "round_nr": 4,
+            "moves": [
+                "Qc4-a6",
+                "h13-h11",
+                "Rn6-n7"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:24:08.237Z clock=60000",
+                "date=2018-12-17T18:24:12.462Z clock=60000",
+                "date=2018-12-17T18:24:17.357Z clock=60000"
+            ]
+        },
+        {
+            "round_nr": 5,
+            "moves": [
+                "Qa6-a7",
+                "Bm7-j10",
+                "Qd1-k8"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:24:21.749Z clock=60000",
+                "date=2018-12-17T18:24:24.482Z clock=60000",
+                "date=2018-12-17T18:24:30.787Z clock=60000"
+            ]
+        },
+        {
+            "round_nr": 6,
+            "moves": [
+                "f7-g7",
+                "k13-k11"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:24:37.119Z clock=60000",
+                "date=2018-12-17T18:24:39.374Z clock=60000",
+                "date=2018-12-17T18:24:41.437Z clock=60000"
+            ]
+        },
+        {
+            "round_nr": 7,
+            "moves": [
+                "g11-g10",
+                "Bn9-l7"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:24:42.899Z clock=60000",
+                "date=2018-12-17T18:24:57.128Z clock=60000",
+                "date=2018-12-17T18:25:13.367Z clock=58761"
+            ]
+        },
+        {
+            "round_nr": 8,
+            "moves": [
+                "Qh7-c7",
+                "h11-h10",
+                "m11-l11"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:25:20.959Z clock=60000",
+                "date=2018-12-17T18:25:25.990Z clock=60000",
+                "date=2018-12-17T18:25:28.637Z clock=58761"
+            ]
+        },
+        {
+            "round_nr": 9,
+            "moves": [
+                "Na5-b7",
+                "h10-h9",
+                "Qg8-j8"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:25:34.758Z clock=60000",
+                "date=2018-12-17T18:25:36.084Z clock=60000",
+                "date=2018-12-17T18:25:47.011Z clock=58761"
+            ]
+        },
+        {
+            "round_nr": 0,
+            "moves": [
+                "c6-d6",
+                "g10-g9",
+                "m9-k9"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:25:51.190Z clock=60000",
+                "date=2018-12-17T18:25:53.808Z clock=60000",
+                "date=2018-12-17T18:25:58.272Z clock=58761"
+            ]
+        },
+        {
+            "round_nr": 1,
+            "moves": [
+                "d6-e6",
+                "Bj10-i11",
+                "m10-k10"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:26:08.791Z clock=60000",
+                "date=2018-12-17T18:26:16.309Z clock=60000",
+                "date=2018-12-17T18:26:25.936Z clock=58761"
+            ]
+        },
+        {
+            "round_nr": 2,
+            "moves": [
+                "e6-f6",
+                "Bi11xk9",
+                "Qj8-j9"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:26:35.551Z clock=60000",
+                "date=2018-12-17T18:26:36.587Z clock=60000",
+                "date=2018-12-17T18:26:54.787Z clock=55561"
+            ]
+        },
+        {
+            "round_nr": 3,
+            "moves": [
+                "f6-g6",
+                "Bk9-j10",
+                "Qj9xBj10"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:26:57.906Z clock=60000",
+                "date=2018-12-17T18:27:00.366Z clock=60000",
+                "date=2018-12-17T18:27:13.527Z clock=55561"
+            ]
+        },
+        {
+            "round_nr": 4,
+            "moves": [
+                "Qg13xQj10",
+                "Qk8xf13"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:27:20.220Z clock=60000",
+                "date=2018-12-17T18:27:36.192Z clock=59028",
+                "date=2018-12-17T18:27:39.112Z clock=55561"
+            ]
+        },
+        {
+            "round_nr": 5,
+            "moves": [
+                "Kj14-k13",
+                "Qf13xe13"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:27:45.158Z clock=60000",
+                "date=2018-12-17T18:27:48.672Z clock=59028",
+                "date=2018-12-17T18:27:56.431Z clock=55561"
+            ]
+        },
+        {
+            "round_nr": 6,
+            "moves": [
+                "Qe13xQj13"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:27:58.587Z clock=60000",
+                "date=2018-12-17T18:28:05.007Z clock=55561"
+            ]
+        },
+        {
+            "round_nr": 7,
+            "moves": [
+                "c5-d5",
+                "Qj13xj12"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:28:10.159Z clock=60000",
+                "date=2018-12-17T18:28:16.641Z clock=55561"
+            ]
+        },
+        {
+            "round_nr": 8,
+            "moves": [
+                "d5-e5",
+                "Qj12xQj10"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:28:18.465Z clock=60000",
+                "date=2018-12-17T18:28:20.221Z clock=55561"
+            ]
+        },
+        {
+            "round_nr": 9,
+            "moves": [
+                "e5-f5",
+                "Nl6-j5"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:28:22.939Z clock=60000",
+                "date=2018-12-17T18:28:24.818Z clock=55561"
+            ]
+        },
+        {
+            "round_nr": 0,
+            "moves": [
+                "Qh6-g6",
+                "Bl7-j9"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:28:31.461Z clock=60000",
+                "date=2018-12-17T18:28:38.312Z clock=55561"
+            ]
+        },
+        {
+            "round_nr": 1,
+            "moves": [
+                "Qg6-e6",
+                "Qj10-k9"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:28:44.955Z clock=60000",
+                "date=2018-12-17T18:28:54.286Z clock=55561"
+            ]
+        },
+        {
+            "round_nr": 2,
+            "moves": [
+                "b11-d11",
+                "Rn7-g7"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:29:01.774Z clock=60000",
+                "date=2018-12-17T18:29:06.612Z clock=55561"
+            ]
+        },
+        {
+            "round_nr": 3,
+            "moves": [
+                "Qa7-a6",
+                "Rn11-n6"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:29:11.563Z clock=60000",
+                "date=2018-12-17T18:29:14.657Z clock=55561"
+            ]
+        },
+        {
+            "round_nr": 4,
+            "moves": [
+                "Nc9-e8",
+                "Rg7xg2"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:29:18.587Z clock=60000",
+                "date=2018-12-17T18:29:23.487Z clock=55561"
+            ]
+        },
+        {
+            "round_nr": 5,
+            "moves": [
+                "Nb7-c9",
+                "Rg2-g5"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:29:26.220Z clock=60000",
+                "date=2018-12-17T18:29:28.202Z clock=55561"
+            ]
+        },
+        {
+            "round_nr": 6,
+            "moves": [
+                "Ra4-a5",
+                "Nj5-h6"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:29:34.507Z clock=60000",
+                "date=2018-12-17T18:29:38.827Z clock=55561"
+            ]
+        },
+        {
+            "round_nr": 7,
+            "moves": [
+                "Ne8-d6",
+                "Nh6xf5"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:29:48.711Z clock=60000",
+                "date=2018-12-17T18:29:51.896Z clock=55561"
+            ]
+        },
+        {
+            "round_nr": 8,
+            "moves": [
+                "Nd6xNf5",
+                "Qk9-l10"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:29:54.573Z clock=60000",
+                "date=2018-12-17T18:30:07.377Z clock=55561"
+            ]
+        },
+        {
+            "round_nr": 9,
+            "moves": [
+                "Nf5xd4",
+                "Rg5xRa5"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:30:11.219Z clock=60000",
+                "date=2018-12-17T18:30:15.072Z clock=55561"
+            ]
+        },
+        {
+            "round_nr": 0,
+            "moves": [
+                "Qa6xRa5",
+                "Ql10xk11"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:30:17.518Z clock=60000",
+                "date=2018-12-17T18:30:18.422Z clock=55561"
+            ]
+        },
+        {
+            "round_nr": 1,
+            "moves": [
+                "Nd4-c6",
+                "Qk11-i9"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:30:21.896Z clock=60000",
+                "date=2018-12-17T18:30:28.727Z clock=55561"
+            ]
+        },
+        {
+            "round_nr": 2,
+            "moves": [
+                "Qe6-e5",
+                "Qi9-i8"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:30:33.404Z clock=60000",
+                "date=2018-12-17T18:30:37.042Z clock=55561"
+            ]
+        },
+        {
+            "round_nr": 3,
+            "moves": [
+                "b4-d4",
+                "Qi8-i12"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:30:40.427Z clock=60000",
+                "date=2018-12-17T18:30:42.626Z clock=55561"
+            ]
+        },
+        {
+            "round_nr": 4,
+            "moves": [
+                "Nc6-b8",
+                "l11-k11"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:30:45.235Z clock=60000",
+                "date=2018-12-17T18:30:49.311Z clock=55561"
+            ]
+        },
+        {
+            "round_nr": 5,
+            "moves": [
+                "Qe5xk11",
+                "Bm5-i9"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:30:55.741Z clock=60000",
+                "date=2018-12-17T18:31:09.042Z clock=55561"
+            ]
+        },
+        {
+            "round_nr": 6,
+            "moves": [
+                "Qk11-j12",
+                "Qi12xQj12"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:31:16.078Z clock=60000",
+                "date=2018-12-17T18:31:24.366Z clock=55561"
+            ]
+        },
+        {
+            "round_nr": 7,
+            "moves": [
+                "d4-e4",
+                "Bj9xe4"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:31:32.679Z clock=60000",
+                "date=2018-12-17T18:31:37.387Z clock=55561"
+            ]
+        },
+        {
+            "round_nr": 8,
+            "moves": [
+                "Ra8-a6",
+                "k10-j10"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:31:48.572Z clock=60000",
+                "date=2018-12-17T18:32:10.473Z clock=48660"
+            ]
+        },
+        {
+            "round_nr": 9,
+            "moves": [
+                "Nc9-e10",
+                "j10-i10"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:32:27.011Z clock=58462",
+                "date=2018-12-17T18:32:35.037Z clock=48660"
+            ]
+        },
+        {
+            "round_nr": 0,
+            "moves": [
+                "Qa5-f10",
+                "i10-h10"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:32:40.079Z clock=58462",
+                "date=2018-12-17T18:32:43.168Z clock=48660"
+            ]
+        },
+        {
+            "round_nr": 1,
+            "moves": [
+                "Nb8-d9",
+                "Rn6-n10"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:32:48.680Z clock=58462",
+                "date=2018-12-17T18:32:59.592Z clock=48660"
+            ]
+        },
+        {
+            "round_nr": 2,
+            "moves": [
+                "Nd9-e11",
+                "Bi9-h8"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:33:03.606Z clock=58462",
+                "date=2018-12-17T18:33:11.712Z clock=48660"
+            ]
+        },
+        {
+            "round_nr": 3,
+            "moves": [
+                "Bb10-e7",
+                "Be4-h7"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:33:16.606Z clock=58462",
+                "date=2018-12-17T18:33:24.010Z clock=48660"
+            ]
+        },
+        {
+            "round_nr": 4,
+            "moves": [
+                "Ra6-h6",
+                "Bh7xNe10"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:33:27.634Z clock=58462",
+                "date=2018-12-17T18:33:36.467Z clock=48660"
+            ]
+        },
+        {
+            "round_nr": 5,
+            "moves": [
+                "Rh6xBh8",
+                "Be10-i14"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:33:39.966Z clock=58462",
+                "date=2018-12-17T18:33:51.082Z clock=48660"
+            ]
+        },
+        {
+            "round_nr": 6,
+            "moves": [
+                "Rh8-d8",
+                "Bi14-j13"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:34:08.536Z clock=56008",
+                "date=2018-12-17T18:34:15.487Z clock=48660"
+            ]
+        },
+        {
+            "round_nr": 7,
+            "moves": [
+                "Rd8-h8"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:34:28.258Z clock=56008",
+                "date=2018-12-17T18:34:34.838Z clock=48660"
+            ]
+        },
+        {
+            "round_nr": 8,
+            "moves": [
+                "Ne11xQg10",
+                "Rn10xNg10"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:34:37.318Z clock=56008",
+                "date=2018-12-17T18:34:39.471Z clock=48660"
+            ]
+        },
+        {
+            "round_nr": 9,
+            "moves": [
+                "Qf10-d8",
+                "Rg10-n10"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:34:44.767Z clock=56008",
+                "date=2018-12-17T18:34:55.746Z clock=48660"
+            ]
+        },
+        {
+            "round_nr": 0,
+            "moves": [
+                "Qd8-c9",
+                "Rn10-n6"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:35:10.785Z clock=55969",
+                "date=2018-12-17T18:35:17.792Z clock=48660"
+            ]
+        },
+        {
+            "round_nr": 1,
+            "moves": [
+                "c8-d8",
+                "Qj12-j6"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:35:21.959Z clock=55969",
+                "date=2018-12-17T18:35:25.463Z clock=48660"
+            ]
+        },
+        {
+            "round_nr": 2,
+            "moves": [
+                "Be7xg9"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:35:28.872Z clock=55969",
+                "date=2018-12-17T18:35:31.662Z clock=48660"
+            ]
+        },
+        {
+            "round_nr": 3,
+            "moves": [
+                "Ka10-b10",
+                "Bj13-n9"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:35:34.386Z clock=55969",
+                "date=2018-12-17T18:35:42.732Z clock=48660"
+            ]
+        },
+        {
+            "round_nr": 4,
+            "moves": [
+                "d8-e8",
+                "Qa6-g6"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:35:45.803Z clock=55969",
+                "date=2018-12-17T18:35:52.447Z clock=48660"
+            ]
+        },
+        {
+            "round_nr": 5,
+            "moves": [
+                "e8-f8",
+                "Bn9-j5"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:35:58.315Z clock=55969",
+                "date=2018-12-17T18:36:01.428Z clock=48660"
+            ]
+        },
+        {
+            "round_nr": 6,
+            "moves": [
+                "d11-e11",
+                "Bj5-g8"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:36:26.433Z clock=45964",
+                "date=2018-12-17T18:36:32.037Z clock=48660"
+            ]
+        },
+        {
+            "round_nr": 7,
+            "moves": [
+                "e11-f11",
+                "Rn6-n11"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:36:43.017Z clock=45964",
+                "date=2018-12-17T18:36:45.372Z clock=48660"
+            ]
+        },
+        {
+            "round_nr": 8,
+            "moves": [
+                "Bg9-h10",
+                "m4-k4"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:37:08.972Z clock=37364",
+                "date=2018-12-17T18:37:32.312Z clock=40320"
+            ]
+        },
+        {
+            "round_nr": 9,
+            "moves": [
+                "f11-g11",
+                "Qg6-f7"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:37:35.020Z clock=37364",
+                "date=2018-12-17T18:37:48.607Z clock=40320"
+            ]
+        },
+        {
+            "round_nr": 0,
+            "moves": [
+                "Rh8-i8",
+                "Bg8-h7"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:38:28.352Z clock=12619",
+                "date=2018-12-17T18:38:39.637Z clock=40320"
+            ]
+        },
+        {
+            "round_nr": 1,
+            "moves": [
+                "Ri8-i11",
+                "Rn11xRi11"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:38:42.429Z clock=12619",
+                "date=2018-12-17T18:39:02.446Z clock=35303"
+            ]
+        },
+        {
+            "round_nr": 2,
+            "moves": [
+                "Bh10xRi11",
+                "Bh7-j9"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:39:04.480Z clock=12619",
+                "date=2018-12-17T18:39:10.442Z clock=35303"
+            ]
+        },
+        {
+            "round_nr": 3,
+            "moves": [
+                "Bi11-h10",
+                "Bj9-l7"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:39:18.165Z clock=12619",
+                "date=2018-12-17T18:39:23.182Z clock=35303"
+            ]
+        },
+        {
+            "round_nr": 4,
+            "moves": [
+                "Qc9-c8",
+                "Qf7-g8"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:39:29.540Z clock=12619",
+                "date=2018-12-17T18:39:31.097Z clock=35303"
+            ]
+        },
+        {
+            "round_nr": 5,
+            "moves": [
+                "Qc8-c9",
+                "k4-j4"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:39:34.030Z clock=12619",
+                "date=2018-12-17T18:39:36.183Z clock=35303"
+            ]
+        },
+        {
+            "round_nr": 6,
+            "moves": [
+                "Qc9-g9",
+                "Qg8xQg9"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:39:38.745Z clock=12619",
+                "date=2018-12-17T18:40:09.717Z clock=19332"
+            ]
+        },
+        {
+            "round_nr": 7,
+            "moves": [
+                "Bh10xQg9",
+                "j4-i4"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:40:15.663Z clock=12619",
+                "date=2018-12-17T18:40:18.937Z clock=19332"
+            ]
+        },
+        {
+            "round_nr": 8,
+            "moves": [
+                "f8-g8",
+                "i4xh3"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:40:20.893Z clock=12619",
+                "date=2018-12-17T18:40:26.787Z clock=19332"
+            ]
+        },
+        {
+            "round_nr": 9,
+            "moves": [
+                "Bg9-d6",
+                "m6-k6"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:40:32.786Z clock=12619",
+                "date=2018-12-17T18:40:45.962Z clock=19332"
+            ]
+        },
+        {
+            "round_nr": 0,
+            "moves": [
+                "R"
+            ],
+            "time_date": [
+                "date=2018-12-17T18:40:47.586Z clock=12619",
+                "date=2018-12-17T18:40:52.293Z clock=19332"
+            ]
+        }
+    ]
+}

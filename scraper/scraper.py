@@ -33,6 +33,9 @@ driver.find_elements(By.XPATH, '//*[@id="password"]')[0].send_keys(PASSWORD)
 driver.find_elements(By.XPATH, '//*[@id="login"]')[0].click()
 time.sleep(5)
 
+with open("./data/pages/page.html", "w", encoding="UTF-8") as f:
+    f.write(driver.page_source)
+
 # page = requests.get(url)
 
 # soup = BeautifulSoup(page.text, 'html.parser')
