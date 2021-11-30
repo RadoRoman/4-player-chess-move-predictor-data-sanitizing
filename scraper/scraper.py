@@ -10,20 +10,24 @@ import time
 USER_NAME = r'TestUserForProject'
 PASSWORD = r'4playerchess'
 
+RED = r'rgb(191, 59, 67);'
+BLUE = r'rgb(65, 133, 191);'
+YELLOW = r'rgb(192, 149, 38);'
+GREEN = r'rgb(78, 145, 97);'
+
 # code by dharmik
-with open(
-        "C:/Users/dharm/OneDrive - IMC/FH Krems/3rd sem/Software Engineering and Project Management/project/4-player-chess-move-predictor-data-sanitizing/data/mergedGameNr2.txt",
-        "r") as f:
-    lines = f.readlines()
-    gameNr = [line.rstrip() for line in lines]
+# with open("./data/mergedGameNr2","r") as f:
+#     lines = f.readlines()
+#     gameNr = [line.rstrip() for line in lines]
 # print(gameNr)
 # print(gameNr[0])
 
 
 # game_nr = 626377
-driver = webdriver.Chrome(
-    executable_path=r"C:\Users\dharm\OneDrive - IMC\FH Krems\3rd sem\Software Engineering and Project Management\project\4-player-chess-move-predictor-data-sanitizing\chromedriver.exe")
-url = "https://www.chess.com/4-player-chess?g={}".format(gameNr[0])
+driver = webdriver.Chrome() # leave this here, since Chromedriver is in the filesystem
+# url = "https://www.chess.com/4-player-chess?g={}".format(gameNr[0])
+url = "https://www.chess.com/4-player-chess?g=9434531"
+
 driver.get(url)
 
 # driver.find_elements(By.XPATH, '//*[@id="sb"]/div[3]/a[8]')[0].click()
@@ -45,8 +49,12 @@ driver.find_elements(By.XPATH, '//*[@id="password"]')[0].send_keys(PASSWORD)
 driver.find_elements(By.XPATH, '//*[@id="login"]')[0].click()
 time.sleep(5)
 
-with open("./data/pages/page.html", "w", encoding="UTF-8") as f:
-    f.write(driver.page_source)
+page_source_code = driver.page_source
+soup = BeautifulSoup(page_source_code, "html.parser")
+print(soup.find("div", {"id": "fullMoveNr_1"}))
+
+# with open("./data/pages/page.html", "w", encoding="UTF-8") as f:
+#     f.write(driver.page_source)
 
 # page = requests.get(url)
 
