@@ -6,14 +6,13 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
+import re
 
 USER_NAME = r'TestUserForProject'
 PASSWORD = r'4playerchess'
 
 # code by dharmik
-with open(
-        "C:/Users/dharm/OneDrive - IMC/FH Krems/3rd sem/Software Engineering and Project Management/project/4-player-chess-move-predictor-data-sanitizing/data/mergedGameNr2.txt",
-        "r") as f:
+with open("C:/Users/dharm/OneDrive - IMC/FH Krems/3rd sem/Software Engineering and Project Management/project/4-player-chess-move-predictor-data-sanitizing/data/mergedGameNr2.txt", "r") as f:
     lines = f.readlines()
     gameNr = [line.rstrip() for line in lines]
 # print(gameNr)
@@ -45,8 +44,26 @@ driver.find_elements(By.XPATH, '//*[@id="password"]')[0].send_keys(PASSWORD)
 driver.find_elements(By.XPATH, '//*[@id="login"]')[0].click()
 time.sleep(5)
 
-with open("./data/pages/page.html", "w", encoding="UTF-8") as f:
-    f.write(driver.page_source)
+#i suggest doing scrapping in test.py at the moment because scrapper is all in one script and every time you run it will open chrome fro chess.com login
+
+with open("data/pages/page.html", "a", encoding="UTF-8") as f:
+    html = driver.page_source
+    #in loop we can accsess directly html in soup
+    # html is messy so i preffered to write it after prettifying it.
+    #f.write(html)
+    soup = BeautifulSoup(html)
+    f.write(soup.prettify())
+    a = soup.find_all("div", {"class": ["fullmoveNr", "pointer"]})
+    for i in a:
+        print(i.text)
+    #delete content of page
+    #f.truncate(0)
+
+
+# r = requests.get('http://www.chess.com/members/view/MagnusCarlsen')
+# soup = BeautifulSoup(r.content)
+# for i in soup.find_all('a', href=re.compile("^/livechess/game\?id=")):
+#     print(re.split(r'id=', i['href'])[1])
 
 # page = requests.get(url)
 
