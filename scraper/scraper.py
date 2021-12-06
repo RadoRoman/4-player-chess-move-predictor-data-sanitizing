@@ -53,9 +53,13 @@ with open("data/pages/page.html", "a", encoding="UTF-8") as f:
     #f.write(html)
     soup = BeautifulSoup(html)
     f.write(soup.prettify())
-    a = soup.find_all("div", {"class": ["fullmoveNr", "pointer"]})
-    for i in a:
-        print(i.text)
+
+    for s in soup.select("div.tableRow span[style]"):
+        print(s['style'], s.text)
+
+    #a = soup.find_all("div", {"class": ["fullmoveNr", "pointer"]})
+    #for i in a:
+        #print(i.text)
     #delete content of page
     #f.truncate(0)
 
