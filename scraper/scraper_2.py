@@ -2,24 +2,34 @@
 
 from bs4 import BeautifulSoup
 import re
+
+def color_parser(string:str) -> str:
+    yellow = "color: rgb(192, 149, 38)"
+    blue = "color: rgb(65, 133, 191)"
+    red = "color: rgb(191, 59, 67)"
+    green = "color: rgb(78, 145, 97)"
+    if yellow in string:
+        return "Yellow"
+    elif blue in string:
+        return "Blue"
+    elif green in string:
+        return "Green"
+    elif red in string:
+        return "Red"
+    else:
+        return "No color specified"
+
 with open("data/pages/page.html", "r", encoding="UTF-8") as f:
     contents = f.read()
     soup = BeautifulSoup(contents, 'html.parser')
-    #a = soup.findAll("div.movesList span")
-    #b= soup.find_all("div", {"class": "fullmoveNr"})
-    #print(a)
-    #for span in a.select_one('span', recursive=False):
-        #print(span.attrs['style'])
-    #for i in a:
-        #b= soup.select_one("span")
-        #for span in soup.select("div.pointer span"):
-        #print(i.text)
+
     for i in soup.find_all("div", {"class": ["tableRow"]}):
         roundNr = i.div.text
         color =  i.find_all("div", {"class": ["pointer"]})
-        print(roundNr)
+        print(roundNr.strip())
         for j in color:
-            print(j.text)
+            print(color_parser(j.span['style']), j['title'])
+            
         #s = i.find('span')
        # if s:
         #for j in i.select("span[style]"):
