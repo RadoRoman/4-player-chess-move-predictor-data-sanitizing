@@ -2,6 +2,7 @@
 
 from bs4 import BeautifulSoup
 import re
+import string
 
 def color_parser(string:str) -> str:
     yellow = "color: rgb(192, 149, 38)"
@@ -23,13 +24,17 @@ with open("data/pages/page.html", "r", encoding="UTF-8") as f:
     contents = f.read()
     soup = BeautifulSoup(contents, 'html.parser')
 
-    for i in soup.find_all("div", {"class": ["tableRow"]}):
+    for i in soup.find_all("div", {"class": "tableRow"}):
         roundNr = i.div.text
-        color =  i.find_all("div", {"class": ["pointer"]})
+        color =  i.find_all("div", {"class": "pointer"})
+        usernames = soup.find_all("div", {"class": "truncate120"})
+        player_name = [i.text.split('\n')[2].translate({ord(c): None for c in string.whitespace}) for i in usernames]
+
         print(roundNr.strip())
         for j in color:
-            print(color_parser(j.span['style']), j['title'])
+            print(color_parser(j.span['style']), j['title'], player_name)
             
+
         #s = i.find('span')
        # if s:
         #for j in i.select("span[style]"):
