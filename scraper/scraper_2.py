@@ -31,7 +31,7 @@ with open("data/pages/page.html", "r", encoding="UTF-8") as f:
         player_name = [i.text.split('\n')[2].translate({ord(c): None for c in string.whitespace}) for i in usernames]
 
 
-        print(roundNr.strip())
+        print(f"\nRound Number: {roundNr.strip()}\n")
 
         for j in color:
             if color_parser(j.span['style']) == "Red":
