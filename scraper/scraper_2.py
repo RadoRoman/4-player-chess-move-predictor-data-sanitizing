@@ -35,16 +35,16 @@ with open("data/pages/page.html", "r", encoding="UTF-8") as f:
 
         for j in color:
             if color_parser(j.span['style']) == "Red":
-                print(player_name[0],color_parser(j.span['style']), j['title'])
+                print(f"Player: {player_name[0]}|{color_parser(j.span['style'])}|\n\t Moves:\n\t{j['title']}")
 
             elif color_parser(j.span['style']) == "Blue":
-                print(player_name[1],color_parser(j.span['style']), j['title'])
+                print(f"Player: {player_name[1]}|{color_parser(j.span['style'])}|\n\t Moves:\n\t{j['title']}")
 
             elif color_parser(j.span['style']) == "Yellow":
-                print(player_name[2],color_parser(j.span['style']), j['title'])
+                print(f"Player: {player_name[2]}|{color_parser(j.span['style'])}|\n\t Moves:\n\t{j['title']}")
             
             else:
-                print(player_name[3],color_parser(j.span['style']), j['title'])
+                print(f"Player: {player_name[3]}|{color_parser(j.span['style'])}|\n\t Moves:\n\t{j['title']}")
             
 
         #s = i.find('span')
