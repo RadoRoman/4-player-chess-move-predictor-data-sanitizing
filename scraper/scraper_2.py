@@ -30,9 +30,21 @@ with open("data/pages/page.html", "r", encoding="UTF-8") as f:
         usernames = soup.find_all("div", {"class": "truncate120"})
         player_name = [i.text.split('\n')[2].translate({ord(c): None for c in string.whitespace}) for i in usernames]
 
+
         print(roundNr.strip())
+
         for j in color:
-            print(color_parser(j.span['style']), j['title'], player_name)
+            if color_parser(j.span['style']) == "Red":
+                print(player_name[0],color_parser(j.span['style']), j['title'])
+
+            elif color_parser(j.span['style']) == "Blue":
+                print(player_name[1],color_parser(j.span['style']), j['title'])
+
+            elif color_parser(j.span['style']) == "Yellow":
+                print(player_name[2],color_parser(j.span['style']), j['title'])
+            
+            else:
+                print(player_name[3],color_parser(j.span['style']), j['title'])
             
 
         #s = i.find('span')
