@@ -1,29 +1,47 @@
 import sqlite3
+import pandas as pd
+import json
+import os, sys
+
+#path = os.getcwd()
+#x = os.path.abspath(os.path.join(path, os.pardir))
+#print(x)
+#sys.path.insert(1, x+'\\scraper')
+
+#from scraper import scraper as tester
+
+#Run this only once - to create the tables
+
+#create a connection
 
 
-#SELECT name FROM sqlite_master WHERE type='table' AND name='{table_name}';
-def DB():
-    try:
-        sqliteConnection = sqlite3.connect('SQLite_Python.db')
-        sqlite_create_table_query = '''CREATE TABLE chess (
-                                    id INTEGER PRIMARY KEY,
-                                    player_name TEXT NOT NULL,
-                                    game_info TEXT NOT NULL,
-                                    moves TEXT NOT NULL,
-                                    game_id_nr INTEGER NOT NULL,
-                                    round INTEGER NOT NULL);'''
 
-        cursor = sqliteConnection.cursor()
-        print("Successfully Connected to SQLite")
-        cursor.execute(sqlite_create_table_query)
-        sqliteConnection.commit()
-        print("SQLite table created")
+def getChessDb(JSON):
 
-        cursor.close()
+    conn = sqlite3.connect('chessDB.db')
+    cursorObj = conn.cursor()
+    cursorObj.execute("select name from sqlite_master where type='table' and name='game'")
+    x = cursorObj.fetchall()
+    if len(x) == 0:
+        cursorObj.execute(""" CREATE TABLE game (
+                                "id" INTEGER PRIMARY KEY,
+                                "game_id" INTEGER(10) NOT NULL,
+                                "username" VARCHAR(255)  NOT NULL,
+                                "round_nr" VARCHAR(5)  NOT NULL,
+                                "moves_time" TEXT NOT NULL,
+                                "color" VARCHAR(10)  NOT NULL
+        )""")
 
-    except sqlite3.Error as error:
-        print("Error while creating a sqlite table", error)
-    finally:
-        if sqliteConnection:
-            sqliteConnection.close()
-            print("sqlite connection is closed")
+    for GameNr in JSON.keys():
+        for data in JSON[GameNr]:
+            username = data['username']
+            round_nr = data['round_nr']
+            moves_time = data['moves-time']
+            color = data['color']
+
+            cursorObj.execute("""INSERT INTO game(game_id, username, round_nr, moves_time, color) VALUES 
+                                (?,?,?,?,?)""",
+                              (GameNr, username, round_nr, moves_time, color))
+    conn.commit()
+    conn.close()
+#getChessDb()
