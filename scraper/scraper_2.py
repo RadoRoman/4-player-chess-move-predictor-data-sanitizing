@@ -37,7 +37,7 @@ def scraper():
     #pa = os.chdir(x)
     print(os.getcwd())
     # sys.path.insert(1,'..\\SQLite_Db')
-    from ChessGameDB import getChessDb
+    from SQLite_Db.ChessGameDB import getChessDb
     #ChessGameDB
 
     with open("page.html", "r", encoding="UTF-8") as f:
