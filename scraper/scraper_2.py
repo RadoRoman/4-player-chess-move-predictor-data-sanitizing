@@ -40,7 +40,7 @@ def scraper():
     from SQLite_Db.ChessGameDB import getChessDb
     #ChessGameDB
 
-    with open("page.html", "r", encoding="UTF-8") as f:
+    with open("data/pages/page.html", "r", encoding="UTF-8") as f:
         contents = f.read()
         soup = BeautifulSoup(contents, 'html.parser')
 
