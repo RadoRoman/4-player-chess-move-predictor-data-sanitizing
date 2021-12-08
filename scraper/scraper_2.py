@@ -60,11 +60,13 @@ def scraper():
         try:
             for i in soup.find_all("div", {"class": "tableRow"}):
 
-                    roundNr = i.div.text
+                    roundNr = int(i.div.text.split(".")[0].translate({ord(c): None for c in string.whitespace}))
                     color = i.find_all("div", {"class": "pointer"})
                     usernames = soup.find_all("div", {"class": "truncate120"})
                     player_name = [i.text.split('\n')[2].translate({ord(c): None for c in string.whitespace}) for i in usernames]
-                    print(usernames)                    #print(f"\nRound Number: {roundNr.strip()}\n")
+                    #print(usernames)
+                    # #print(f"\nRound Number: {roundNr.strip()}\n")
+                    print(roundNr)
 
                     for j in color:
 
@@ -73,8 +75,9 @@ def scraper():
                                 # Easier to read every information
                                 jsonString[regex2].append({
                                     'username' : player_name[0],
-                                    'round_nr': roundNr.split()[0],
-                                    'moves-time': j['title'],
+                                    'round_nr': roundNr,
+                                    'moves': j['title'].split(" • ")[0],
+                                    'time' : j['title'].split(" • ")[1],
                                     'color': 'Red'
                                 })
                                 #print(f"Player: {player_name[0]}|{color_parser(j.span['style'])}|\n\t Moves:\n\t{j['title']}")
@@ -84,8 +87,9 @@ def scraper():
                                 # Easier to read every information
                                 jsonString[regex2].append({
                                     'username': player_name[1],
-                                    'round_nr': roundNr.split()[0],
-                                    'moves-time': j['title'],
+                                    'round_nr': roundNr,
+                                    'moves': j['title'].split(" • ")[0],
+                                    'time' : j['title'].split(" • ")[1],
                                     'color': 'Blue'
                                 })
 
@@ -96,8 +100,9 @@ def scraper():
                                 # Easier to read every information
                                 jsonString[regex2].append({
                                     'username': player_name[2],
-                                    'round_nr': roundNr.split()[0],
-                                    'moves-time': j['title'],
+                                    'round_nr': roundNr,
+                                    'moves': j['title'].split(" • ")[0],
+                                    'time' : j['title'].split(" • ")[1],
                                     'color': 'Yellow'
                                 })
                                 #print(f"Player: {player_name[2]}|{color_parser(j.span['style'])}|\n\t Moves:\n\t{j['title']}")
@@ -106,8 +111,9 @@ def scraper():
                                 # Easier to read every information
                                 jsonString[regex2].append({
                                     'username': player_name[3],
-                                    'round_nr': roundNr.split()[0],
-                                    'moves-time': j['title'],
+                                    'round_nr': roundNr,
+                                    'moves': j['title'].split(" • ")[0],
+                                    'time' : j['title'].split(" • ")[1],
                                     'color': 'Green'
                                 })
                             #print(f"Player: {player_name[3]}|{color_parser(j.span['style'])}|\n\t Moves:\n\t{j['title']}")
