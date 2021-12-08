@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="chessDB" uuid="0b9c622a-3b62-4750-b4b5-f38f2cc1a615">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\dharm\OneDrive - IMC\FH Krems\3rd sem\Software Engineering and Project Management\project\4-player-chess-move-predictor-data-sanitizing\SQLite_Db\chessDB.db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="chessDB [2]" uuid="ee55853f-b5a1-45ca-a6b4-cab6883ad821">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\dharm\OneDrive - IMC\FH Krems\3rd sem\Software Engineering and Project Management\project\4-player-chess-move-predictor-data-sanitizing\chessDB.db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>

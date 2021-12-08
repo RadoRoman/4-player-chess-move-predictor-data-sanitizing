@@ -1,22 +1,7 @@
 import sqlite3
-import pandas as pd
-import json
-import os, sys
-
-#path = os.getcwd()
-#x = os.path.abspath(os.path.join(path, os.pardir))
-#print(x)
-#sys.path.insert(1, x+'\\scraper')
-
-#from scraper import scraper as tester
-
-#Run this only once - to create the tables
-
-#create a connection
 
 
-
-def getChessDb(JSON):
+def Chess_db(JSON):
 
     conn = sqlite3.connect('chessDB.db')
     cursorObj = conn.cursor()
@@ -46,4 +31,4 @@ def getChessDb(JSON):
                               (GameNr, username, round_nr, moves, time, color))
     conn.commit()
     conn.close()
-#getChessDb()
+
