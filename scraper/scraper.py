@@ -58,12 +58,11 @@ def scraper():
 
     try:
         for i in soup.find_all("div", {"class": "tableRow"}):
-
             roundNr = i.div.text
             color = i.find_all("div", {"class": "pointer"})
             usernames = soup.find_all("div", {"class": "truncate120"})
-            player_name = [i.text.split('\n')[2].translate({ord(c): None for c in string.whitespace}) for i in usernames]
-
+            player_name = [i.text.split('\n')[1].translate({ord(c): None for c in string.whitespace}) for i in usernames]
+            #print(player_name)
             # print(f"\nRound Number: {roundNr.strip()}\n")
 
             for j in color:
@@ -150,5 +149,5 @@ driver.find_elements(By.XPATH, '//*[@id="username"]')[0].send_keys(USER_NAME)
 driver.find_elements(By.XPATH, '//*[@id="password"]')[0].send_keys(PASSWORD)
 driver.find_elements(By.XPATH, '//*[@id="login"]')[0].click()
 time.sleep(5)
-
 scraper()
+

@@ -64,8 +64,7 @@ def scraper():
                     color = i.find_all("div", {"class": "pointer"})
                     usernames = soup.find_all("div", {"class": "truncate120"})
                     player_name = [i.text.split('\n')[2].translate({ord(c): None for c in string.whitespace}) for i in usernames]
-
-                    #print(f"\nRound Number: {roundNr.strip()}\n")
+                    print(usernames)                    #print(f"\nRound Number: {roundNr.strip()}\n")
 
                     for j in color:
 
