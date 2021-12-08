@@ -14,7 +14,7 @@ import xlsxwriter
 
 form_class, _ = loadUiType(path.join(path.dirname(__file__), "main.ui"))
 
-
+'''define attributes'''
 class MainApp(QMainWindow, form_class):
     def __init__(self, parent=None):
         super(MainApp, self).__init__(parent)
@@ -24,11 +24,12 @@ class MainApp(QMainWindow, form_class):
         self.Handel_buttons()
         self.Handel_DataBase_Connection()
 
+    #template title
     def InitUI(self):
         self.setWindowTitle("Chess Manager")
 
     def Handel_DataBase_Connection(self):
-
+        '''connecting to database'''
         try:
             self.cnx = mysql.connector.connect(user='root', password='Leen2021!',
                                                host='localhost',
@@ -43,17 +44,20 @@ class MainApp(QMainWindow, form_class):
             else:
                 print(err)
 
+    #Method that let the button go back to their initial states
     def eraseAllCarControls(self):
         self.red_steps.setCurrentIndex(0)
         self.blue_steps.setCurrentIndex(0)
         self.yellow_steps.setCurrentIndex(0)
         self.green_steps.setCurrentIndex(0)
 
+    #Add Steps button
     def Handel_buttons(self):
         self.btn_Add_Steps_Info.clicked.connect(self.Add_Steps_Info)
 
     def Add_Steps_Info(self):
         count = 1
+        '''identifying the bars inputs in the second template'''
         green = self.green_steps.currentIndex()
         yellow = self.yellow_steps.currentIndex()
         red = self.red_steps.currentIndex()
@@ -69,6 +73,8 @@ class MainApp(QMainWindow, form_class):
         # Erase All Controls Contents
         self.eraseAllCarControls()
 
+        '''trying to do a loop that checks each player behaviour and assign the name depending on that.
+            also displaying players' names after adding the steps'''
         while count < 7:
             count = count+1
         else:
@@ -88,6 +94,7 @@ class MainApp(QMainWindow, form_class):
             player1 = self.cursor.fetchall()
             print(player1[0][0])
 
+            '''displaying the name of players'''
             self.txt_Anonymous_green.setText(player4[0][0])
             self.txt_Anonymous_yellow.setText(player3[0][0])
             self.txt_Anonymous_blue.setText(player2[0][0])
