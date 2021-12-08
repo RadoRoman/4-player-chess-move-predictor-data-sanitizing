@@ -135,7 +135,7 @@ if __name__ == '__main__':
         game_nr_list = [line.rstrip() for line in lines]
 
     #scrapping each game html file using list of game numbers
-    for game_nr in game_nr_list[161:200]:
+    for game_nr in game_nr_list[351:400]:
         driver = webdriver.Chrome(executable_path=r"chromedriver.exe")
         #common game url with game_nr pasted using loop
         url = "https://www.chess.com/4-player-chess?g={}".format(game_nr)
