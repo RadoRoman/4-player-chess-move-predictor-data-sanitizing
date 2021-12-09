@@ -1,9 +1,6 @@
 import pytest
+import os
 
-
-import json
-import os, sys
-import re
 
 pathOS = os.getcwd()
 

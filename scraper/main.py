@@ -11,12 +11,12 @@ import sys
 from SQLite_Db.ChessGameDB import Chess_db
 
 
-def color_parser(string:str) -> str:
+def color_parser(string: str) -> str:
     """
     converting rgb values to respective colors for given string.
     """
 
-    #predfined colors with rgb values
+    # predfined colors with rgb values
     yellow = "color: rgb(192, 149, 38)"
     blue = "color: rgb(65, 133, 191)"
     red = "color: rgb(191, 59, 67)"
@@ -33,7 +33,8 @@ def color_parser(string:str) -> str:
     else:
         return "No color specified"
 
-def scraper():
+
+def scraper() -> dict:
     """
     function to scrape data from given gameNr's html source page using beautifulsoup
     and storing them in Database
@@ -158,4 +159,3 @@ if __name__ == '__main__':
         time.sleep(4)
         # call the scrapper fuction after sucessfully logged in
         scraper()
-
